@@ -1,1 +1,3 @@
-console.log('Hola mundo');
+// Variables y Constantes
+
+console.log('hola');
