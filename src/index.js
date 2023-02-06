@@ -1,26 +1,22 @@
+import { heroes } from './data/heroes';
+
+// const getHeroesById = (id) => {
+//     return heroes.find( ( heroe ) => {
+//         if( heroe.id === id ){
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     });
+// }
 
 
-const personajes = ['Goku','Vegueta','Trunks'];
-const [ , ,p3 ] = personajes;
-console.log( p3 );
+// const getHeroesById = (id) => {
+//     return heroes.find( ( heroe ) => heroe.id === id );
+// }
 
-const retornaArreglo = () =>{
-    return ['ABC',123];
-}
+const getHeroesById = (id) => heroes.find( ( heroe ) => heroe.id === id );
+console.log(getHeroesById(2));
 
-const [ letras, numeros ] = retornaArreglo();
-console.log( letras, numeros );
-
-// Tarea
-const estado = ( nombre ) => {
-    return [ nombre, ()=> { console.log('Hola mundo')}];
-}
-
-const arr = estado( 'Goku' );
-
-// arr[1]();
-
-const [ nombre, setNombre ] = estado('Goku');
-
-console.log( nombre );
-setNombre();
+const getHeroesByOwner = (owner) => heroes.filter( ( heroe ) => heroe.owner === owner );
+console.log(getHeroesByOwner('DC'));
