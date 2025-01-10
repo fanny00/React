@@ -6,7 +6,7 @@
 // import { owners } from "./data/heroes2";
 // import  heroes, { owners } from './data/heroes2';
 // import { heroes, owners } from "./data/heroes2";
-import  heroes, { owners } from './data/heroes2';
+import  heroes, { owners } from '../data/heroes2';
 
  // console.log( heroes );
 
